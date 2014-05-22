@@ -3,3 +3,18 @@
 @media only screen and (max-width: 640px) {
   .bottomWrapper, .topWrapper, #ariane {
     display: none; } }
+
+#boarshort {
+	border-color: #e4e4e4;
+	border-style: solid;
+	border-width: 1px 0 0 0;
+	padding: 20px 0 50px;
+}
+
+.item_title {
+	color: #383838;
+	clear: both;
+	display: block;
+	font-size: 14px;
+	text-align: center;
+}

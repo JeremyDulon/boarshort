@@ -26,6 +26,31 @@
             }
 
             this.onResize();
+            
+            //catégories events
+            $('.event_categorie').click(function()
+            {
+                if (!$(this).hasClass('active'))
+                {
+                    $('.event_categorie').removeClass('active');
+                    $(this).addClass('active');
+                    $('.events_list').hide();
+                    $('#event_'+$(this).attr('name')).show();
+                }
+            });
+            
+            $('#event_all_carousel').jcarousel({
+                scroll: 1,
+                wrap: 'both',
+                initCallback : allEventsInit,
+                itemVisibleInCallback: {
+                    onAfterAnimation: allEventsAfter
+                }
+            });
+
+            $('#event_all .jcarousel-next, #event_all .jcarousel-prev').wrapAll('<div class="pagination_container " />');
+            
+            $('.event_all_carousel_controls_bullets a:eq(0)').addClass('active');
         },
 
 
@@ -60,3 +85,19 @@ function track_my_event(tracking_category, tracking_action, tracking_value, trac
 
 }
 
+function allEventsInit(carousel)
+{
+    $('.event_all_carousel_controls_bullets a').bind('click', function() {
+        carousel.scroll(jQuery.jcarousel.intval(jQuery(this).text()));
+        $('.event_all_carousel_controls_bullets a').removeClass('active');
+        $(this).addClass('active');
+        return false;
+    });
+}
+
+function allEventsAfter(carousel, item, idx, state) 
+{
+    idx--;
+    $('.event_all_carousel_controls_bullets a').removeClass('active');
+    $('.event_all_carousel_controls_bullets a:eq('+idx+')').addClass('active');
+}
