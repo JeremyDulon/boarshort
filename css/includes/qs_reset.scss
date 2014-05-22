@@ -1,0 +1,37 @@
+/*
+#top-header,
+#bottom-header,
+#breadcrumb-container{
+	z-index: 10;
+    position:absolute;
+    width:100%;
+}
+
+
+#top-header
+{
+    height:24px;
+    top:0px;
+}
+#bottom-header
+{
+    top:24px;
+    height:77px;
+}
+
+*/
+
+#breadcrumb-container{
+	margin: 0;
+    display:none;
+}
+
+.category-description{
+	padding:10px 0 10px;
+}
+
+#footer-container, .category-description
+{
+    display:none;
+}
+

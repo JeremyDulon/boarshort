@@ -1,0 +1,17 @@
+@import 'includes/mixin.scss';
+@import 'includes/media-queries.scss';
+
+.mini_site_container
+{
+
+}
+
+
+/* Respond-to exemple */
+@include respond-to(handhelds) {
+    .bottomWrapper, .topWrapper, #ariane
+    {
+        display:none;
+    }
+}
+

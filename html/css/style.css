@@ -1,0 +1,5 @@
+/* ANIMATION */
+/* Respond-to exemple */
+@media only screen and (max-width: 640px) {
+  .bottomWrapper, .topWrapper, #ariane {
+    display: none; } }

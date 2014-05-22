@@ -1,0 +1,30 @@
+{
+  "name": "minisite",
+  "version": "0.1.0",
+  "description": "Mini site",
+  "main": "index.js",
+  "scripts": {
+    "test": "none"
+  },
+  "author": "Dev",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.9.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-htmlhint": "^0.4.0",
+    "grunt-usemin": "^2.1.1",
+    "qs_auto_labels": "0.0.5",
+    "qs_cdn": "0.0.9",
+    "qs_export_config": "0.0.3",
+    "qs_export_labels": "0.0.16",
+    "qs_i18n": "0.0.4",
+    "qs_import_config": "0.0.2",
+    "qs_import_labels": "0.0.8",
+    "string": "^1.8.1"
+  }
+}

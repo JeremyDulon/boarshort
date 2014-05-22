@@ -1,0 +1,107 @@
+@mixin box-sizing()
+{
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+@mixin cover()
+{
+     -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+           background-size: cover;
+}
+
+@mixin opacity($alpha) {
+  // IE 8
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=$alpha*100)";
+  // IE 5-7
+  filter: alpha(opacity=$alpha*100);
+  // Real Browsers
+  -webkit-opacity: $alpha;
+  -moz-opacity: $alpha;
+  -khtml-opacity: $alpha;
+  opacity: $alpha;
+}
+
+@mixin transition($transition-property, $transition-duration, $transition-timing-function: ease, $transition-delay:0){
+    -webkit-transition: $transition-property $transition-duration $transition-timing-function $transition-delay;
+    -moz-transition: $transition-property $transition-duration $transition-timing-function $transition-delay;
+    -o-transition: $transition-property $transition-duration  $transition-timing-function $transition-delay;
+    transition: $transition-property $transition-duration  $transition-timing-function $transition-delay;
+}
+
+
+@mixin sku-gradient($start, $end) {
+
+    background: $start;
+	background: radial-gradient(ellipse at center, $start 50%, $end 100%);
+}
+
+@mixin translate($t){
+    -webkit-transform: $t;
+    -moz-transform   : $t;
+    -o-transform     : $t;
+    -ms-transform    : $t;
+    transform        : $t;
+}
+
+
+
+
+@mixin rotate( $degrees ) {
+  -webkit-transform: rotate(#{$degrees}deg);
+  -moz-transform: rotate(#{$degrees}deg);
+  -ms-transform: rotate(#{$degrees}deg);
+  -o-transform: rotate(#{$degrees}deg);
+  transform: rotate(#{$degrees}deg);
+
+  filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)})";
+  zoom: 1;
+ }
+
+/* ANIMATION */
+@mixin animation( $value... ) {
+  -webkit-animation:$value;
+  -moz-animation:$value;
+  -o-animation:$value;
+  -ms-animation:$value;
+  animation:$value;
+}
+@mixin blur( $px ) {
+     -webkit-filter: blur($px); 
+         -moz-filter: blur($px); 
+             filter: blur($px); 
+}
+
+@mixin keyframes( $name ) {
+  @-webkit-keyframes #{$name} { @content }
+  @-moz-keyframes #{$name} { @content }
+  @-o-keyframes #{$name} { @content }
+  @-ms-keyframes #{$name} { @content }
+  @keyframes #{$name} { @content }
+}
+
+
+@mixin respond-to($media) {
+  @if $media == portrait {
+    @media only screen and (orientation: portrait) { @content; }
+  }
+  @if $media == handhelds {
+    @media only screen and (max-width: 640px) { @content; }
+  }
+  @else if $media == small-screens {
+    @media only screen and (min-width: 641px) and (max-width: 1200px) { @content; }
+  }
+  @else if $media == portrait {
+    @media only screen and (orientation: portrait) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: 641px) and (max-width: 1000px) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: 1001px) { @content; }
+  }
+}
+
