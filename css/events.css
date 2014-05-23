@@ -18,12 +18,12 @@
 
 /* Gestion de l'affichage des évènements et des carousels */
 
-#event_all_carousel li {
+.event_all_carousel li {
     width: 970px;
     height: 750px;
 }
 
-#events_list .event-separator{
+.events_list .event-separator{
   height: 1px;
   width: 970px;
   display: block;
@@ -61,6 +61,7 @@
 .jcarousel-clip {
     width: 970px;
     height: 600px;
+    border-top: none;
 }
 
 .jcarousel-item{
@@ -85,12 +86,12 @@
 
 .jcarousel-list li {
   width: 970px;
-  height: 450px;
+  height: 600px;
 }
 
 /* Gestion de la partie navigation */
 
-.pagination_container{
+.pagination_container {
   display: block;
   height: 24px;
   width: 970px;
@@ -177,4 +178,10 @@
 .event_all_carousel_controls a:hover
 {
   background: #000;
+}
+
+.event_all_carousel_controls a.oktamer,
+.event_all_carousel_controls a:hover
+{
+  background: red;
 }

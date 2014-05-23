@@ -26,31 +26,23 @@
             }
 
             this.onResize();
-            
-            //catégories events
-            $('.event_categorie').click(function()
-            {
-                if (!$(this).hasClass('active'))
-                {
-                    $('.event_categorie').removeClass('active');
-                    $(this).addClass('active');
-                    $('.events_list').hide();
-                    $('#event_'+$(this).attr('name')).show();
-                }
-            });
-            
-            $('#event_all_carousel').jcarousel({
-                scroll: 1,
-                wrap: 'both',
-                initCallback : allEventsInit,
-                itemVisibleInCallback: {
-                    onAfterAnimation: allEventsAfter
-                }
-            });
 
-            $('#event_all .jcarousel-next, #event_all .jcarousel-prev').wrapAll('<div class="pagination_container " />');
+            var i=0 ;
             
-            $('.event_all_carousel_controls_bullets a:eq(0)').addClass('active');
+            $('.event_all_carousel').each(function() {
+                $(this).jcarousel({
+                    scroll: 1,
+                    wrap: 'both',
+                    itemVisibleInCallback: {
+                        onBeforeAnimation: beforeAnimation,
+                        onAfterAnimation: afterAnimation,
+                    }
+                });
+
+                $('#carousel_'+i+' .jcarousel-next, #carousel_'+i+' .jcarousel-prev').wrapAll('<div class="pagination_container " id="'+i+'"/>');
+                i++;
+            
+            });
         },
 
 
@@ -95,9 +87,20 @@ function allEventsInit(carousel)
     });
 }
 
-function allEventsAfter(carousel, item, idx, state) 
+function beforeAnimation(carousel, item, idx, state) 
 {
     idx--;
-    $('.event_all_carousel_controls_bullets a').removeClass('active');
-    $('.event_all_carousel_controls_bullets a:eq('+idx+')').addClass('active');
+    $(item).parent().parent().parent().parent().find('.boarshort_carousel_controls_bullets a').removeClass('active');
+    $(item).parent().parent().parent().parent().find('.boarshort_carousel_controls_bullets a:eq('+idx+')').addClass('active');
+
+    if (state!='init') {
+        $('.item_info').stop(true,true).fadeOut(0);
+    }
+}
+
+function afterAnimation(carousel, item, idx, state) 
+{
+    if (state!='init') {
+        $('.item_info').stop(true,true).fadeIn(400);
+    }
 }

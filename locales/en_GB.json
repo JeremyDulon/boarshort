@@ -3,5 +3,51 @@
 		"outputFolder": "en_GB"
 	},
 	"data": {
+		"BOARDSHORT_Reinvented": {
+			"Title": "#BOARDSHORT_REINVENTED.TITLE#",
+			"slide": {
+				"Img": "#BOARDSHORT_REINVENTED.SLIDE.IMG#",
+				"Title": "#BOARDSHORT_REINVENTED.SLIDE.TITLE#",
+				"Desc": "#BOARDSHORT_REINVENTED.SLIDE.DESC#"
+			},
+			"slide1": {
+				"Img": "#BOARDSHORT_REINVENTED.SLIDE1.IMG#",
+				"Title": "#BOARDSHORT_REINVENTED.SLIDE1.TITLE#",
+				"Desc": "#BOARDSHORT_REINVENTED.SLIDE1.DESC#"
+			},
+			"slide2": {
+				"Img": "#BOARDSHORT_REINVENTED.SLIDE2.IMG#",
+				"Title": "#BOARDSHORT_REINVENTED.SLIDE2.TITLE#",
+				"Desc": "#BOARDSHORT_REINVENTED.SLIDE2.DESC#"
+			}
+		},
+		"slide": {
+			"Title": "#SLIDE.TITLE#",
+			"Desc": "#SLIDE.DESC#",
+			"Img": "#SLIDE.IMG#"
+		},
+		"boardshort": {
+			"Title": "#BOARDSHORT.TITLE#",
+			"carousel": {
+				"Title": "#BOARDSHORT.CAROUSEL.TITLE#"
+			}
+		},
+		"boarshort": {
+			"slide": {
+				"Img": "#BOARSHORT.SLIDE.IMG#",
+				"Title": "#BOARSHORT.SLIDE.TITLE#",
+				"Desc": "#BOARSHORT.SLIDE.DESC#"
+			},
+			"slide1": {
+				"Img": "http://www.magicsurf.fr/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/s/u/surf-bic-7-9-photo-3_1.jpg",
+				"Title": "#BOARSHORT.SLIDE1.TITLE#",
+				"Desc": "#BOARSHORT.SLIDE1.DESC#"
+			},
+			"slide2": {
+				"Img": "http://www.magicsurf.fr/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/s/u/surf-bic-7-9-photo-3_1.jpg",
+				"Title": "#BOARSHORT.SLIDE2.TITLE#",
+				"Desc": "#BOARSHORT.SLIDE2.DESC#"
+			}
+		}
 	}
 }

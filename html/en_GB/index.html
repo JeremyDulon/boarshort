@@ -5,64 +5,51 @@
 <link href="../css/style.css" type="text/css" rel="stylesheet" />
 <link href="../css/events.css" type="text/css" rel="stylesheet" />
 <!-- endbuild -->
-
+<?php
+	$url = "../locales/en_GB.json";
+	$contents = file_get_contents($url); 
+	$contents = utf8_encode($contents); 
+	$json = json_decode($contents, true);
+?>
 <div class="mini_site_container">
 	<div class="pdp-desc-block" id="boarshort">
 		<p class="pdp-desc-block-title">
-			<h2><%BOARDSHORT_Reinvented.Title%></h2>
+			<h2>#BOARDSHORT.TITLE#</h2>
+		</p>
+		<p class="carousel_title">
+			#BOARDSHORT.CAROUSEL.TITLE#
 		</p>
 
-		<div id="events_list">
-		    <div id="event_all" class="events_list active clearfix">
-		        <ul id="event_all_carousel">
+		<div class="events_all">
+		    <div id="carousel_0" class="events_list active clearfix">
+		        <ul class="event_all_carousel">
 		            <li class="event_item">
 		                <div class="event_info ">
-	                        <img src="http://static.quiksilver-europe.com/www/2012.quiksilver.eu/html/upload/surf/eu/events/_ID-37-5-204x169.jpg" alt="Eddie Aikau 2014"/>
+	                        <img src="http://www.magicsurf.fr/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/s/u/surf-bic-7-9-photo-3_1.jpg"/>
 		                </div>
 		                <div class="item_info">
-		                	<h2><span class="item_title">Laser Cut to Heat</span></h2>
+		                	<h2><span class="item_title">#BOARSHORT.SLIDE1.TITLE#</span></h2>
 		                	<div class="item_desc">
-			                	vkdfj lksjf lkjg htrdkdtrhj kjsldkjf jzkhza lkj je lkje osis poipok r pkzajdeskfj dssregijr gùfdsk,fezfog kj
-			                	sdfps jgmqkg jezf modsqjv sqmlvkjrfm ksjvs m regkjhr thr srtz gsh sdfht hstrsggdfsq qtry rshstrh trd tsrhg trh
-			                	vkdfj lksjf lkjg htrdkdtrhj kjsldkjf jzkhza lkj je lkje osis poipok r pkzajdeskfj dssregijr gùfdsk,fezfog kj
-			                	sdfps jgmqkg jezf modsqjv sqmlvkjrfm ksjvs m regkjhr thr srtz gsh sdfht hstrsggdfsq qtry rshstrh trd tsrhg trh
+		                		#BOARSHORT.SLIDE1.DESC#
 		                	</div>
 		                </div>
 		            </li>
-		            <li class="event_item">
-	                    <div class="event_info ">
-	                        <img src="http://static.quiksilver-europe.com/www/2012.quiksilver.eu/html/upload/surf/eu/events/_ID-5-5-Pro-Gold-Coast-204x169.jpg" alt="Pro Gold Coast 2012"/>
-		                </div>
-                        <div class="item_info">
-                        	<h2><span class="item_title">Laser Cut to Heat</span></h2>
-                        	<div class="item_desc">
-        	                	vkdfj lksjf lkjg htrdkdtrhj kjsldkjf jzkhza lkj je lkje osis poipok r pkzajdeskfj dssregijr gùfdsk,fezfog kj
-        	                	sdfps jgmqkg jezf modsqjv sqmlvkjrfm ksjvs m regkjhr thr srtz gsh sdfht hstrsggdfsq qtry rshstrh trd tsrhg trh
-        	                	vkdfj lksjf lkjg htrdkdtrhj kjsldkjf jzkhza lkj je lkje osis poipok r pkzajdeskfj dssregijr gùfdsk,fezfog kj
-        	                	sdfps jgmqkg jezf modsqjv sqmlvkjrfm ksjvs m regkjhr thr srtz gsh sdfht hstrsggdfsq qtry rshstrh trd tsrhg trh
-                        	</div>
-                        </div>
-		            </li>
-		            <li class="event_item">
+		        	<li class="event_item">
 		                <div class="event_info ">
-		                    <img src="http://static.quiksilver-europe.com/www/2012.quiksilver.eu/html/upload/surf/eu/events/_ID-19--5-Pro-France-2010-204x169.jpg" alt="Pro France 2010"/>
+	                        <img src="http://www.magicsurf.fr/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/s/u/surf-bic-7-9-photo-3_1.jpg"/>
 		                </div>
-	                    <div class="item_info">
-	                    	<h2><span class="item_title">Laser Cut to Heat</span></h2>
-	                    	<div class="item_desc">
-	    	                	vkdfj lksjf lkjg htrdkdtrhj kjsldkjf jzkhza lkj je lkje osis poipok r pkzajdeskfj dssregijr gùfdsk,fezfog kj
-	    	                	sdfps jgmqkg jezf modsqjv sqmlvkjrfm ksjvs m regkjhr thr srtz gsh sdfht hstrsggdfsq qtry rshstrh trd tsrhg trh
-	    	                	vkdfj lksjf lkjg htrdkdtrhj kjsldkjf jzkhza lkj je lkje osis poipok r pkzajdeskfj dssregijr gùfdsk,fezfog kj
-	    	                	sdfps jgmqkg jezf modsqjv sqmlvkjrfm ksjvs m regkjhr thr srtz gsh sdfht hstrsggdfsq qtry rshstrh trd tsrhg trh
-	                    	</div>
-	                    </div>
+		                <div class="item_info">
+		                	<h2><span class="item_title">#BOARSHORT.SLIDE2.TITLE#</span></h2>
+		                	<div class="item_desc">
+		                		#BOARSHORT.SLIDE2.DESC#
+		                	</div>
+		                </div>
 		            </li>
 		        </ul>
-		        <div class="event_all_carousel_controls">
-		            <div class="event_all_carousel_controls_bullets clearfix">
+		        <div class="boarshort_carousel_controls">
+		            <div class="boarshort_carousel_controls_bullets clearfix">
 		            	<a href="#" >1</a>
 		            	<a href="#" >2</a>
-		            	<a href="#" >3</a>
 		            </div>
 		        </div>
 		    </div>
