@@ -189,26 +189,29 @@
 
 .boarshort_carousel_controls a {
   background: #000;
-  cursor: pointer;
   display: inline-block;
-  margin: 5px 15px 5px 15px;
   text-align: center;
   overflow: hidden;
-  width: 4px;
-  height: 4px;
+  width: 3px;
+  height: 3px;
   text-indent: -10000px;
   z-index: 20000;
   position: relative;
+  vertical-align: middle;
 
 }
 
-.boarshort_carousel_controls a.active,
-.boarshort_carousel_controls a:hover
+.boarshort_carousel_controls a.active
 {
   width: 8px;
   height: 8px;
   background: #FFF;
   border: 2px solid #000;
-  position: absolute;
-  bottom: 0px;
+  vertical-align: middle;
+}
+
+.carousel_bullet {
+	display: table-cell;
+	text-align: center;
+	width: 25px;
 }
