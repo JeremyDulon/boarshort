@@ -3,69 +3,43 @@
 <![endif]--> 
 <!-- build:css ../css/style.min.css -->
 <link href="../css/style.css" type="text/css" rel="stylesheet" />
-<link href="../css/events.css" type="text/css" rel="stylesheet" />
 <!-- endbuild -->
-<?php
-	$url = "../locales/en_GB.json";
-	$contents = file_get_contents($url); 
-	$contents = utf8_encode($contents); 
-	$json = json_decode($contents, true);
-?>
 <div class="mini_site_container">
 	<div class="pdp-desc-block" id="boarshort">
 		<p class="pdp-desc-block-title">
-			<h2><%=boardshort.Title%></h2>
-		</p>
-		<p class="carousel_title">
-			<%=boardshort.carousel.Title%>
+			<h2><%=boardshort.Title %></h2>
 		</p>
 
-		<div class="events_all">
-		    <div id="carousel_0" class="events_list active clearfix">
-		        <ul class="event_all_carousel">
-		            <li class="event_item">
-		                <div class="event_info ">
-	                        <img src="<%=boarshort.slide1.Img%>"/>
+		<% _.forEach(carousel_all, function(i, idx) { %>
+		<p class="carousel_title">
+			<%= i.title %>
+		</p>
+
+		    <div id="carousel_<%= idx %>" class="boardshorts_list active clearfix">
+		        <ul class="boardshort_all_carousel">
+		        	<% _.forEach(i.carousel, function(j) { %>
+		            <li class="boardshort_item">
+		                <div class="item_img ">
+	                        <img src="<%= [j.img] %>"/>
 		                </div>
 		                <div class="item_info">
-		                	<h2><span class="item_title"><%=boarshort.slide1.Title%></span></h2>
+		                	<h2><span class="item_title"><%= [j.title] %></span></h2>
 		                	<div class="item_desc">
-		                		<%=boarshort.slide1.Desc%>
+		                		<%= [j.desc] %>
 		                	</div>
 		                </div>
 		            </li>
-		        	<li class="event_item">
-		                <div class="event_info ">
-	                        <img src="<%=boarshort.slide2.Img%>"/>
-		                </div>
-		                <div class="item_info">
-		                	<h2><span class="item_title"><%=boarshort.slide2.Title%></span></h2>
-		                	<div class="item_desc">
-		                		<%=boarshort.slide2.Desc%>
-		                	</div>
-		                </div>
-		            </li>
-		           	<li class="event_item">
-		                <div class="event_info ">
-	                        <img src="<%=boarshort.slide2.Img%>"/>
-		                </div>
-		                <div class="item_info">
-		                	<h2><span class="item_title"><%=boarshort.slide2.Title%></span></h2>
-		                	<div class="item_desc">
-		                		<%=boarshort.slide2.Desc%>
-		                	</div>
-		                </div>
-		            </li>
+		            <% }); %>
 		        </ul>
 		        <div class="boarshort_carousel_controls">
 		            <div class="boarshort_carousel_controls_bullets clearfix">
-		            	<div class="carousel_bullet"><a href="#" >1</a></div>
-		            	<div class="carousel_bullet"><a href="#" >2</a></div>
-		            	<div class="carousel_bullet"><a href="#" >3</a></div>
+		            <% _.forEach(i.carousel, function(i, num) { %>
+		            	<div class="carousel_bullet"><a href="#" ><%= num %></a></div>
+		            <% }); %>
 		            </div>
 		        </div>
 		    </div>
-		</div>
+		 <% }); %> 
 	</div>
 </div>
 

@@ -1,142 +1,90 @@
 /* ANIMATION */
-/* Respond-to exemple */
-@media only screen and (max-width: 640px) {
-  .bottomWrapper, .topWrapper, #ariane {
-    display: none; } }
-
-#boarshort {
-	border-color: #e4e4e4;
-	border-style: solid;
-	border-width: 1px 0 0 0;
-	padding: 20px 0 50px;
-}
-
-.item_title {
-	color: #383838;
-	clear: both;
-	display: block;
-	font-size: 14px;
-	text-align: center;
-}
-
-.item_desc {
-	padding: 0 180px 0 180px;
-	text-align: justify;
-	line-height: 16px;
-}
-
-.events_all {
-	margin: 20px 0 20px 0;
-}
-
-.carousel_title {
-	color: #333;
-	font-family: 'berthold',Arial,sans;
-	font-size: 30px;
-	margin-top: 30px;
-}
-
-#titreSousSection {
-
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\000036}}
 #titreSousSection h1 {
-    font-family: berthold;
-    font-size: 40px;
-    font-weight: normal;
-    letter-spacing: 1px;
-    margin: 10px 0 0;
-    text-transform: uppercase;
-    width: 100%;
-    line-height: 35px;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    padding: 2px 0 0;
-}
+  font-family: "berthold", Arial, sans;
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 10px 0 0;
+  text-transform: uppercase;
+  width: 100%;
+  line-height: 35px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 2px 0 0; }
 
-/* Gestion de l'affichage des évènements et des carousels */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\0000320}}
+.carousel_title {
+  color: #333;
+  font-family: "berthold", Arial, sans;
+  font-size: 30px;
+  margin-top: 30px; }
 
-.event_all_carousel li {
-    width: 970px;
-    height: 750px;
-}
-
-.events_list .event-separator{
-  height: 1px;
+/* Gestion de l'affichage des boardshorts et des carousels */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\0000329}}
+.boardshort_all_carousel li {
   width: 970px;
-  display: block;
-  background: #d0d0ce;
-  float: left;
-}
+  height: 750px; }
 
-.event_info a {
-}
-
-.event_info img { 
-}
-
-.event_info p {
-}
-
-.event_info:hover p {
-}
-
-.item_info {
-  height: 300px;
-  width: 970px;
-  margin-top: 50px;
-}
-
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\0000334}}
 .jcarousel-container-horizontal {
   margin: auto;
   width: 970px;
   height: 600px;
-  padding: 0;
-}
+  padding: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\0000341}}
 .jcarousel-clip-horizontal,
 .jcarousel-clip {
-    width: 970px;
-    height: 600px;
-    border-top: none;
-}
-
-.jcarousel-item{
-  width: 970px;
-  height: 450px;
-}
-
-.jcarousel-item .event_info{
-  width: 970px;
-  height: 450px;
-}
-
-.jcarousel-item .event_info:hover{
-  width: 970px;
-  height: 450px;
-}
-
-.jcarousel-item img{
-  width: 970px;
-  height: 450px;
-}
-
-.jcarousel-list li {
   width: 970px;
   height: 600px;
-}
+  border-top: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\0000348}}
+.jcarousel-item {
+  width: 970px;
+  height: 450px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\0000353}}
+.jcarousel-item img {
+  width: 970px;
+  height: 450px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\0000358}}
+.jcarousel-list li {
+  width: 970px;
+  height: 600px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\0000363}}
+.item_info {
+  height: 300px;
+  width: 970px;
+  margin-top: 50px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\0000369}}
+.item_title {
+  color: #383838;
+  clear: both;
+  display: block;
+  font-size: 14px;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\0000377}}
+.item_desc {
+  padding: 0 180px 0 180px;
+  text-align: justify;
+  line-height: 16px; }
 
 /* Gestion de la partie navigation */
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\0000385}}
 .pagination_container {
   display: block;
   height: 24px;
   width: 970px;
   position: absolute;
-  bottom: 120px;
-}
+  bottom: 120px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\0000393}}
 .jcarousel-prev, .jcarousel-next {
   width: 24px;
   height: 24px;
@@ -144,74 +92,73 @@
   display: block;
   position: relative;
   /*bottom: 0;*/
-  z-index: 2000;
-}
+  z-index: 2000; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\00003103}}
 .jcarousel-prev {
   background: transparent url(../img/carousel_arrows_riders.png) no-repeat left top;
   /*left: 0;*/
-    float: left;
-}
+  float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\00003108}}
+  .jcarousel-prev:hover {
+    background: transparent url(../img/carousel_arrows_riders.png) no-repeat left 33%; }
 
-.jcarousel-prev:hover {
-  background: transparent url(../img/carousel_arrows_riders.png) no-repeat left 33%;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\00003113}}
 .jcarousel-prev-disabled,
 .jcarousel-prev-disabled-horizontal {
-  opacity: 0;
-}
+  opacity: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\00003118}}
 .jcarousel-next {
   background: transparent url(../img/carousel_arrows_riders.png) no-repeat left 66%;
-    float: right;
-}
+  float: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\00003122}}
+  .jcarousel-next:hover {
+    background: transparent url(../img/carousel_arrows_riders.png) no-repeat left bottom; }
 
-.jcarousel-next:hover {
-  background: transparent url(../img/carousel_arrows_riders.png) no-repeat left bottom;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\00003127}}
 .jcarousel-next-disabled,
 .jcarousel-next-disabled-horizontal {
-  opacity: 0;
-}
+  opacity: 0; }
 
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\00003133}}
 .boarshort_carousel_controls {
   position: relative;
   text-align: center;
   width: 970px;
   display: block;
   height: 18px;
-  margin: -20px 30px 0 0px;
+  margin: -20px 0 0 0;
   bottom: 120px;
-}
+  pointer-events: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\00003143}}
+  .boarshort_carousel_controls a {
+    background: #000;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    width: 3px;
+    height: 3px;
+    text-indent: -10000px;
+    z-index: 20000;
+    position: relative;
+    vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\00003155}}
+    .boarshort_carousel_controls a.active {
+      width: 8px;
+      height: 8px;
+      background: #FFF;
+      border: 2px solid #000;
+      vertical-align: middle; }
 
-.boarshort_carousel_controls a {
-  background: #000;
-  display: inline-block;
-  text-align: center;
-  overflow: hidden;
-  width: 3px;
-  height: 3px;
-  text-indent: -10000px;
-  z-index: 20000;
-  position: relative;
-  vertical-align: middle;
-
-}
-
-.boarshort_carousel_controls a.active
-{
-  width: 8px;
-  height: 8px;
-  background: #FFF;
-  border: 2px solid #000;
-  vertical-align: middle;
-}
-
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\00003165}}
 .carousel_bullet {
-	display: table-cell;
-	text-align: center;
-	width: 25px;
-}
+  display: table-cell;
+  text-align: center;
+  width: 25px; }
+
+/* Respond-to exemple */
+@media only screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/style\.scss}line{font-family:\00003173}}
+  .bottomWrapper, .topWrapper, #ariane {
+    display: none; } }

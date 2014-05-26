@@ -26,6 +26,23 @@
             }
 
             this.onResize();
+
+            var i=0 ;
+            
+            $('.boardshort_all_carousel').each(function() {
+                $(this).jcarousel({
+                    scroll: 1,
+                    wrap: 'both',
+                    itemVisibleInCallback: {
+                        onBeforeAnimation: beforeAnimation,
+                        onAfterAnimation: afterAnimation,
+                    }
+                });
+
+                $('#carousel_'+i+' .jcarousel-next, #carousel_'+i+' .jcarousel-prev').wrapAll('<div class="pagination_container " id="'+i+'"/>');
+                i++;
+            
+            });
         },
 
 
@@ -60,3 +77,20 @@ function track_my_event(tracking_category, tracking_action, tracking_value, trac
 
 }
 
+function beforeAnimation(carousel, item, idx, state) 
+{
+    idx--;
+
+    if (state!='init') {
+        $(item).children('.item_info').stop(true, true).fadeOut(0);
+    }
+    $(item).parent().parent().parent().parent().find('.boarshort_carousel_controls_bullets a').removeClass('active');
+    $(item).parent().parent().parent().parent().find('.boarshort_carousel_controls_bullets a:eq('+idx+')').addClass('active');
+}
+
+function afterAnimation(carousel, item, idx, state) 
+{
+    if (state!='init') {
+        $(item).children('.item_info').stop(true,true).fadeIn(400);
+    }
+}

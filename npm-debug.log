@@ -1,0 +1,72 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'gem' ]
+2 info using npm@1.4.4
+3 info using node@v0.10.26
+4 warn package.json minisite@0.1.0 No repository field.
+5 warn package.json qs_auto_labels@0.0.5 No repository field.
+6 warn package.json qs_cdn@0.0.9 No repository field.
+7 warn package.json qs_export_config@0.0.3 No repository field.
+8 warn package.json qs_export_labels@0.0.16 No repository field.
+9 warn package.json qs_i18n@0.0.4 No repository field.
+10 warn package.json qs_import_config@0.0.2 No repository field.
+11 warn package.json qs_import_labels@0.0.8 No repository field.
+12 verbose readDependencies using package.json deps
+13 verbose cache add [ 'gem', null ]
+14 verbose cache add name=undefined spec="gem" args=["gem",null]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: 'gem',
+15 verbose parsed url   path: 'gem',
+15 verbose parsed url   href: 'gem' }
+16 silly lockFile f2185b78-gem gem
+17 verbose lock gem /root/.npm/f2185b78-gem.lock
+18 silly lockFile f2185b78-gem gem
+19 silly lockFile f2185b78-gem gem
+20 verbose addNamed [ 'gem', '' ]
+21 verbose addNamed [ null, '*' ]
+22 silly lockFile a37db760-gem gem@
+23 verbose lock gem@ /root/.npm/a37db760-gem.lock
+24 silly addNameRange { name: 'gem', range: '*', hasData: false }
+25 verbose url raw gem
+26 verbose url resolving [ 'https://registry.npmjs.org/', './gem' ]
+27 verbose url resolved https://registry.npmjs.org/gem
+28 info trying registry request attempt 1 at 15:57:11
+29 http GET https://registry.npmjs.org/gem
+30 http 404 https://registry.npmjs.org/gem
+31 silly registry.get cb [ 404,
+31 silly registry.get   { date: 'Mon, 26 May 2014 13:57:12 GMT',
+31 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+31 silly registry.get     'content-type': 'application/json',
+31 silly registry.get     via: '1.1 varnish',
+31 silly registry.get     'cache-control': 'max-age=0',
+31 silly registry.get     'content-length': '52',
+31 silly registry.get     'accept-ranges': 'bytes',
+31 silly registry.get     age: '0',
+31 silly registry.get     'x-served-by': 'cache-v42-ASH, cache-lo82-LHR',
+31 silly registry.get     'x-cache': 'MISS, MISS',
+31 silly registry.get     'x-cache-hits': '0, 0',
+31 silly registry.get     'x-timer': 'S1401112632.463775,VS0,VE180',
+31 silly registry.get     'keep-alive': 'timeout=10, max=50',
+31 silly registry.get     connection: 'Keep-Alive' } ]
+32 silly lockFile a37db760-gem gem@
+33 silly lockFile a37db760-gem gem@
+34 error 404 'gem' is not in the npm registry.
+34 error 404 You should bug the author to publish it
+34 error 404 It was specified as a dependency of 'minisite'
+34 error 404
+34 error 404 Note that you can also install from a
+34 error 404 tarball, folder, or http url, or git url.
+35 error System Linux 3.13-1-686-pae
+36 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "gem"
+37 error cwd /donnees/www/boardshort
+38 error node -v v0.10.26
+39 error npm -v 1.4.4
+40 error code E404
+41 verbose exit [ 1, true ]

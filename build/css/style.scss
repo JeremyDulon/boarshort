@@ -3,7 +3,14 @@
 
 $font-family: 'berthold',Arial,sans;
 
-#titreSousSection h1 {
+/* Respond-to exemple */
+@include respond-to(handhelds) {
+    .bottomWrapper, .topWrapper, #ariane
+    {
+        display:none;
+    }
+
+    #titreSousSection h1 {
         font-family: $font-family;
         font-size: 40px;
         font-weight: normal;
@@ -147,11 +154,11 @@ $font-family: 'berthold',Arial,sans;
     	  width: 3px;
     	  height: 3px;
     	  text-indent: -10000px;
-    	  z-index: 2000;
+    	  z-index: 20000;
     	  position: relative;
     	  vertical-align: middle;
 
-	    	&.active {
+	    	&:active {
 	    		width: 8px;
 	    		height: 8px;
 	    		background: #FFF;
@@ -165,12 +172,5 @@ $font-family: 'berthold',Arial,sans;
     	display: table-cell;
     	text-align: center;
     	width: 25px;
-    }
-
-/* Respond-to exemple */
-@include respond-to(handhelds) {
-    .bottomWrapper, .topWrapper, #ariane
-    {
-        display:none;
     }
 }
