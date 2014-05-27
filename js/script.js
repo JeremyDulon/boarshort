@@ -41,7 +41,16 @@
 
                 $('#carousel_'+i+' .jcarousel-next, #carousel_'+i+' .jcarousel-prev').wrapAll('<div class="pagination_container " id="'+i+'"/>');
                 i++;
+
             
+            });
+
+            $('.boarshort_carousel_controls_bullets a').click(function() {
+                if(!$(this).hasClass('active')) {
+                    var idx = Number($(this).text());
+                    idx++;
+                    $(this).parents('.boardshorts_list').find('.boardshort_all_carousel').jcarousel('scroll',idx);
+                }
             });
         },
 
@@ -84,13 +93,13 @@ function beforeAnimation(carousel, item, idx, state)
     if (state!='init') {
         $(item).children('.item_info').stop(true, true).fadeOut(0);
     }
-    $(item).parent().parent().parent().parent().find('.boarshort_carousel_controls_bullets a').removeClass('active');
-    $(item).parent().parent().parent().parent().find('.boarshort_carousel_controls_bullets a:eq('+idx+')').addClass('active');
+    $(item).parents('.boardshorts_list').find('.boarshort_carousel_controls_bullets a').removeClass('active');
+    $(item).parents('.boardshorts_list').find('.boarshort_carousel_controls_bullets a:eq('+idx+')').addClass('active');
 }
 
 function afterAnimation(carousel, item, idx, state) 
 {
     if (state!='init') {
-        $(item).children('.item_info').stop(true,true).fadeIn(400);
+        $(item).children('.item_info').stop(true,true).delay(200).fadeIn(400);
     }
 }

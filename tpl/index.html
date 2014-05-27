@@ -5,9 +5,9 @@
 <link href="../css/style.css" type="text/css" rel="stylesheet" />
 <!-- endbuild -->
 <div class="mini_site_container">
-	<div class="pdp-desc-block" id="boarshort">
+	<div class="pdp-desc-block" id="boardshort">
 		<p class="pdp-desc-block-title">
-			<h2><%=boardshort.Title %></h2>
+			<h2 id="boardshort_title"><%=boardshort.Title %></h2>
 		</p>
 
 		<% _.forEach(carousel_all, function(i, idx) { %>
@@ -34,7 +34,7 @@
 		        <div class="boarshort_carousel_controls">
 		            <div class="boarshort_carousel_controls_bullets clearfix">
 		            <% _.forEach(i.carousel, function(i, num) { %>
-		            	<div class="carousel_bullet"><a href="#" ><%= num %></a></div>
+		            	<div class="carousel_bullet"><a href="javascript:void(0)" ><%= num %></a></div>
 		            <% }); %>
 		            </div>
 		        </div>

@@ -1,139 +1,139 @@
 /* ANIMATION */
+#titreSousSection h1 {
+  font-family: "berthold", Arial, sans;
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 10px 0 0;
+  text-transform: uppercase;
+  width: 100%;
+  line-height: 35px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 2px 0 0; }
+
+.carousel_title {
+  color: #333;
+  font-family: "berthold", Arial, sans;
+  font-size: 30px;
+  margin-top: 30px; }
+
+/* Gestion de l'affichage des boardshorts et des carousels */
+.boardshort_all_carousel li {
+  width: 970px;
+  height: 750px; }
+
+.jcarousel-container-horizontal {
+  margin: auto;
+  width: 970px;
+  height: 600px;
+  padding: 0; }
+
+.jcarousel-clip-horizontal,
+.jcarousel-clip {
+  width: 970px;
+  height: 600px;
+  border-top: none; }
+
+.jcarousel-item {
+  width: 970px;
+  height: 450px; }
+
+.jcarousel-item img {
+  width: 970px;
+  height: 450px; }
+
+.jcarousel-list li {
+  width: 970px;
+  height: 600px; }
+
+.item_info {
+  height: 300px;
+  width: 970px;
+  margin-top: 50px; }
+
+.item_title {
+  color: #383838;
+  clear: both;
+  display: block;
+  font-size: 14px;
+  text-align: center; }
+
+.item_desc {
+  padding: 0 180px 0 180px;
+  text-align: justify;
+  line-height: 16px; }
+
+/* Gestion de la partie navigation */
+.pagination_container {
+  display: block;
+  height: 24px;
+  width: 970px;
+  position: absolute;
+  bottom: 120px; }
+
+.jcarousel-prev, .jcarousel-next {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  /*bottom: 0;*/
+  z-index: 2000; }
+
+.jcarousel-prev {
+  background: transparent url(../img/carousel_arrows_riders.png) no-repeat left top;
+  /*left: 0;*/
+  float: left; }
+  .jcarousel-prev:hover {
+    background: transparent url(../img/carousel_arrows_riders.png) no-repeat left 33%; }
+
+.jcarousel-prev-disabled,
+.jcarousel-prev-disabled-horizontal {
+  opacity: 0; }
+
+.jcarousel-next {
+  background: transparent url(../img/carousel_arrows_riders.png) no-repeat left 66%;
+  float: right; }
+  .jcarousel-next:hover {
+    background: transparent url(../img/carousel_arrows_riders.png) no-repeat left bottom; }
+
+.jcarousel-next-disabled,
+.jcarousel-next-disabled-horizontal {
+  opacity: 0; }
+
+.boarshort_carousel_controls {
+  position: relative;
+  text-align: center;
+  width: 970px;
+  display: block;
+  height: 18px;
+  margin: -20px 30px 0 0px;
+  bottom: 120px; }
+  .boarshort_carousel_controls a {
+    background: #000;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    width: 3px;
+    height: 3px;
+    text-indent: -10000px;
+    z-index: 2000;
+    position: relative;
+    vertical-align: middle; }
+    .boarshort_carousel_controls a.active {
+      width: 8px;
+      height: 8px;
+      background: #FFF;
+      border: 2px solid #000;
+      vertical-align: middle; }
+
+.carousel_bullet {
+  display: table-cell;
+  text-align: center;
+  width: 25px; }
+
 /* Respond-to exemple */
 @media only screen and (max-width: 640px) {
   .bottomWrapper, .topWrapper, #ariane {
-    display: none; }
-
-  #titreSousSection h1 {
-    font-family: "berthold", Arial, sans;
-    font-size: 40px;
-    font-weight: normal;
-    letter-spacing: 1px;
-    margin: 10px 0 0;
-    text-transform: uppercase;
-    width: 100%;
-    line-height: 35px;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    padding: 2px 0 0; }
-
-  .carousel_title {
-    color: #333;
-    font-family: "berthold", Arial, sans;
-    font-size: 30px;
-    margin-top: 30px; }
-
-  /* Gestion de l'affichage des boardshorts et des carousels */
-  .boardshort_all_carousel li {
-    width: 970px;
-    height: 750px; }
-
-  .jcarousel-container-horizontal {
-    margin: auto;
-    width: 970px;
-    height: 600px;
-    padding: 0; }
-
-  .jcarousel-clip-horizontal,
-  .jcarousel-clip {
-    width: 970px;
-    height: 600px;
-    border-top: none; }
-
-  .jcarousel-item {
-    width: 970px;
-    height: 450px; }
-
-  .jcarousel-item img {
-    width: 970px;
-    height: 450px; }
-
-  .jcarousel-list li {
-    width: 970px;
-    height: 600px; }
-
-  .item_info {
-    height: 300px;
-    width: 970px;
-    margin-top: 50px; }
-
-  .item_title {
-    color: #383838;
-    clear: both;
-    display: block;
-    font-size: 14px;
-    text-align: center; }
-
-  .item_desc {
-    padding: 0 180px 0 180px;
-    text-align: justify;
-    line-height: 16px; }
-
-  /* Gestion de la partie navigation */
-  .pagination_container {
-    display: block;
-    height: 24px;
-    width: 970px;
-    position: absolute;
-    bottom: 120px; }
-
-  .jcarousel-prev, .jcarousel-next {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    display: block;
-    position: relative;
-    /*bottom: 0;*/
-    z-index: 2000; }
-
-  .jcarousel-prev {
-    background: transparent url(../img/carousel_arrows_riders.png) no-repeat left top;
-    /*left: 0;*/
-    float: left; }
-    .jcarousel-prev:hover {
-      background: transparent url(../img/carousel_arrows_riders.png) no-repeat left 33%; }
-
-  .jcarousel-prev-disabled,
-  .jcarousel-prev-disabled-horizontal {
-    opacity: 0; }
-
-  .jcarousel-next {
-    background: transparent url(../img/carousel_arrows_riders.png) no-repeat left 66%;
-    float: right; }
-    .jcarousel-next:hover {
-      background: transparent url(../img/carousel_arrows_riders.png) no-repeat left bottom; }
-
-  .jcarousel-next-disabled,
-  .jcarousel-next-disabled-horizontal {
-    opacity: 0; }
-
-  .boarshort_carousel_controls {
-    position: relative;
-    text-align: center;
-    width: 970px;
-    display: block;
-    height: 18px;
-    margin: -20px 30px 0 0px;
-    bottom: 120px; }
-    .boarshort_carousel_controls a {
-      background: #000;
-      display: inline-block;
-      text-align: center;
-      overflow: hidden;
-      width: 3px;
-      height: 3px;
-      text-indent: -10000px;
-      z-index: 20000;
-      position: relative;
-      vertical-align: middle; }
-      .boarshort_carousel_controls a:active {
-        width: 8px;
-        height: 8px;
-        background: #FFF;
-        border: 2px solid #000;
-        vertical-align: middle; }
-
-  .carousel_bullet {
-    display: table-cell;
-    text-align: center;
-    width: 25px; } }
+    display: none; } }

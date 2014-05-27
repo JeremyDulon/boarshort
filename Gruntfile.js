@@ -33,7 +33,6 @@ grunt.initConfig({
         prod: {
             options:
             {
-                debugInfo: false,
                 lineComments: false,
                 lineNumbers: false
             },
@@ -48,7 +47,6 @@ grunt.initConfig({
 	    dev: {
             options:
             {
-                debugInfo: true,
                 lineComments: true,
                 lineNumbers: true
             },
@@ -142,7 +140,7 @@ grunt.initConfig({
         europe: {
             src: ['./build/**/*.html' ],
             options: {
-                cdn: 'mon_dossier/empty_project',
+                cdn: 'quiksilver/default/PDP-A47/',
                 link_suffix: '?$staticlink$'
             }
         },

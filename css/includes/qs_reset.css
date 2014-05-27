@@ -20,15 +20,15 @@
 }
 
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/includes\/qs_reset\.scss}line{font-family:\0000324}}
+/* line 24, qs_reset.scss */
 #breadcrumb-container {
   margin: 0;
   display: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/includes\/qs_reset\.scss}line{font-family:\0000329}}
+/* line 29, qs_reset.scss */
 .category-description {
   padding: 10px 0 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/donnees\/www\/boardshort\/css\/includes\/qs_reset\.scss}line{font-family:\0000333}}
+/* line 33, qs_reset.scss */
 #footer-container, .category-description {
   display: none; }
